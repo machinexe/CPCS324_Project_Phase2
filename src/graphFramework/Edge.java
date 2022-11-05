@@ -9,7 +9,7 @@ package graphFramework;
  * 13th Nov. 2022
  */
 
-public class Edge implements Comparable<Edge> {
+public class Edge {
 
 	// Data Fields
 	int weight;
@@ -38,23 +38,6 @@ public class Edge implements Comparable<Edge> {
 	}
 
 	// Methods
-
-	/**
-	 * Compare the edges weight To support Priority-queue
-	 * 
-	 * @return
-	 */
-	@Override
-	public int compareTo(Edge o) {
-		if (this.weight > o.weight)
-			return 1;
-		else if (this.weight == o.weight)
-			return 0;
-		else
-			return -1;
-
-	}
-
 	/**
 	 * display edges info
 	 */
