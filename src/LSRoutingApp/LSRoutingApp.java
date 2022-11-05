@@ -67,7 +67,7 @@ public class LSRoutingApp {
 		if (userInput == 2) {
 			System.out.println("\n\t\t\t-Requirement 2 Using Make Graph function-");
 			System.out.print("\nDo you want the graph directed (yes/no)? "); // Ask user if he/she want to do the
-																				// algorithm with direct graph
+											// algorithm with direct graph
 			String choiceDigraph = input.next();
 
 			// FOR WRONG INPUT
@@ -92,7 +92,7 @@ public class LSRoutingApp {
 			System.out.print("\nSelect your Test Option -> ");
 			userInput = input.nextInt(); // Option of the Case
 
-			while (userInput > 7 || userInput < 1) {
+			while (userInput > 5 || userInput < 1) {
 				System.out.println("Option not found.");
 				System.out.print("Select your Test Option -> ");
 				userInput = input.nextInt();
@@ -131,8 +131,7 @@ public class LSRoutingApp {
 				break;
 			}
 
-			Graph networkTopology = new Graph(verticesNO, edgesNO, isDigraph); // Create An Object of Graph as
-																				// networkTopology
+			Graph networkTopology = new Graph(verticesNO, edgesNO, isDigraph); // Create An Object of Graph as networkTopology
 			networkTopology.makeGraph(verticesNO, edgesNO); // Access readGraphFromFile Method in Graph Class
 			DijkstraAlg dijkstra = new DijkstraAlg(networkTopology); // Create DijkstraAlg object to use Dijkstra algorithm
 			long startTime = System.currentTimeMillis(); // Store the time before invoke the algorithm
