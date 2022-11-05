@@ -138,7 +138,6 @@ public class LSRoutingApp {
 			dijkstra.computeDijkstraAlg(networkTopology);
 			long finishTime = System.currentTimeMillis();// Store the time after invoke the algorithm
 			// Print the running time
-			System.out.println("\n-----------------------------------------------------");
 			System.out.println("Run time for Dijkstra algorithm " + (finishTime - startTime) + " ms \n");
 
 		} // End of requirement 2
