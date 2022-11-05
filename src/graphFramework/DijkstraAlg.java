@@ -68,11 +68,10 @@ public class DijkstraAlg {
 						// Update both distance array and path array
 
 						distance[edge.target.label] = distance[u] + edge.weight; // Update the target location to the
-																					// new one minimum distance
+													// new one minimum distance
 						path[edge.target.label] = path[u] + " – " + edge.target.displayInfo(); // Add the target
-																								// location info to the
-																								// array path
-
+														 	// location info to the
+														  	// array path
 					} // End of inner if-statement
 				} // End of outer if-statement
 			} // End of the Iterator loop
@@ -108,7 +107,7 @@ public class DijkstraAlg {
 		// Start loop from 1 to ignore 1st Vertex
 		for (int i = 1; i < graph.verticesNO; i++) {
 			System.out.println("\n" + path[i] + " route length: " + distance[i]); // Print linked path and final cost
-																					// sequentially
+												// sequentially
 		} // End of for loop
 	} // End of method
 
