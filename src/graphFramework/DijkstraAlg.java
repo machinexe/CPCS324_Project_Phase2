@@ -53,8 +53,7 @@ public class DijkstraAlg {
 
 				/**
 				 * Continue only if: 1. Vertex not visited 2. its weight is set by the
-				 * (minDistance) method 3. its weight not zero (because 0 is only for 1st
-				 * Vertex)
+				 * (minDistance) method 3. its weight not zero
 				 */
 				if (graph.vertices[edge.target.label].isVisited != true && edge.weight != infinity
 						&& edge.weight != 0) {
